@@ -14,9 +14,9 @@
     --HoverTransition: 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
     --HoverOpacity: 0.6;
     --TextColor: #17171D;
-    /* --MainColor: #dd51bc;
+     --MainColor: #0e1327; 
     --MainColorTransparent: #dd51bc2f;
-    --MainColorDark: #74155e; */
+    --MainColorDark: #f2a312; 
     --MainColorLight: #fff1fc;
     --SecondaryColor: #fff0d9;
     --SecondaryColorLight: #FFF8EC;
@@ -1593,7 +1593,7 @@ a:hover {
 }
 
 .hero-opacity {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--MainColor);
     position: absolute;
     top: 0;
     left: 0;
@@ -1794,6 +1794,8 @@ a:hover {
     font-size: 42px;
     margin-bottom: 0;
     line-height: 1.2;
+    background: aqua;
+    border-radius: 25%;
 }
 .counter-bg {
     background-position: center;
@@ -1824,7 +1826,7 @@ a:hover {
 	letter-spacing: 0;
 }
 .counter p {
-    color: #747474;
+    /* color: #747474; */
     text-transform: uppercase;
     margin-bottom: 0;
     font-weight: 600;
@@ -1849,7 +1851,9 @@ a:hover {
     opacity: 1;
     font-weight: 700;
     text-shadow: 0px 0px 5px #000000;
-    
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 2%;
+    background-color: var(--MainColor);
 }
 .promo-columns-text.left {
     margin-left: 80px;
@@ -1863,6 +1867,60 @@ a:hover {
 }
 
 /* Footer */
+
+.end1{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .end1 .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    display: block !important;
+    }
+    
+    .end1 .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .end1 .row a:hover{
+    color:#fff;
+    }
+    
+    .end1 .row ul{
+    width:100%;
+    }
+    
+    .end1 .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .end1 .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .end1{
+    text-align:left;
+    padding:5%;
+    }
+    .end1 .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .end1 .row a i{
+    margin:0% 3%;
+    }
+    }
 
 footer {
     color: #fff;

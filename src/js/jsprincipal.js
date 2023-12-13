@@ -71,3 +71,62 @@
 })(jQuery);
 
 
+// Botão ler mais celular
+
+
+
+function lerMais(textId, btnId,event) {
+    
+    const textoCompleto = document.getElementById(textId);
+    const lerMaisBtn = document.getElementById(btnId);
+
+    
+  
+    if (textoCompleto.style.maxHeight === '100px') {
+      textoCompleto.style.maxHeight = 'none';
+      lerMaisBtn.innerHTML = 'Ler Menos<span class="fa fa-angle-up"></span>';
+    } else {
+      textoCompleto.style.maxHeight = '100px';
+      lerMaisBtn.innerHTML = 'Ler Mais<span class="fa fa-angle-down"></span>';
+    }
+  }
+
+  
+  
+//   function verificarLarguraTela() {
+//     const larguraTela = window.innerWidth;
+
+//     // Se a largura da tela for menor ou igual a 842px
+//     if (larguraTela <= 842) {
+//       // Mostrar os botões Ler Mais
+//       const botoesLerMais = document.querySelectorAll('.BtnReadMore');
+//       botoesLerMais.forEach(botao => botao.classList.remove('hidden-class'));
+//     } else {
+//       // Ocultar os botões Ler Mais
+//       const botoesLerMais = document.querySelectorAll('.BtnReadMore');
+//       botoesLerMais.forEach(botao => botao.classList.add('hidden-class'));
+//     }
+//   }
+
+//   // Verificar a largura da tela quando a página carrega
+//   verificarLarguraTela();
+
+//   // Adicionar um ouvinte de evento de redimensionamento da janela
+//   window.addEventListener('resize', verificarLarguraTela);
+
+// function lerMais(secao) {
+//     var dots = document.getElementById(`dots-${secao}`);
+//     var moreText = document.getElementById(`more-${secao}`);
+//     var btnText = document.getElementById(`BtnReadMore${secao}`);
+  
+//     if (dots.style.display === "none") {
+//       dots.style.display = "inline";
+//       btnText.innerHTML = "Saiba mais";
+//       moreText.style.display = "none";
+//     } else {
+//       dots.style.display = "none";
+//       btnText.innerHTML = "Saiba menos";
+//       moreText.style.display = "inline";
+//     }
+//   }
+  

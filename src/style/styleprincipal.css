@@ -614,6 +614,7 @@ a:hover {
 
 .nav-mobile-container .offcanvas-header {
     padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 .nav-mobile-container .offcanvas-body {
@@ -653,7 +654,39 @@ a:hover {
 .nav-mobile>ul>li>a {
     font-weight: 600;
     font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    margin: 1%;
+    /* z-index: 1; */
+    position: relative;
+    padding-left: 5%;
 }
+/* 
+textura */
+
+.image-container {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+  
+  .image-overlay {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('/src/img/texture-bg.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5); 
+  }
 
 .nav-mobile .navbar-nav .dropdown-menu {
     width: 100%;
@@ -1954,6 +1987,7 @@ h1 {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     padding: 2%;
     background-color: var(--MainColor);
+    margin: 3%;
 }
 .promo-columns-text.left {
     margin-left: 80px;
@@ -1965,6 +1999,45 @@ h1 {
     width: 100%;
     height: auto;
 }
+
+/* 
+cores do bg */
+
+.texto1{
+ 
+    /* position: absolute; */
+    
+    background-image: linear-gradient(gold, #f2a312);
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+     transition: background-size .7s, background-position .5s ease-in-out;
+    padding: 2%;
+  }
+  
+  .texto1:hover {
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position .7s, background-size .5s ease-in-out;
+  }
+  
+  
+  
+  .control-panel{
+      padding: 10px;
+  }
+  
+  
+  @media screen and (max-width: 574px) {
+      #bl-work-section {
+        word-break: break-all;
+      }
+  
+      
+    }
+  
+    
+    
 
 /* Footer */
 

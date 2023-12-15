@@ -774,6 +774,12 @@ textura */
     z-index: 2;
 }
 
+@media (max-width: 904px){
+    .presentation-controller{
+        color: #ffffff !important;
+    }
+}
+
 .hero h1 {
     font-size: 60px;
     line-height: 84px;

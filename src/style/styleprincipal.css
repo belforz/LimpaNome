@@ -129,42 +129,42 @@ a:hover {
 
 .section-cta,
 .section-cta-o {
-    background-color: var(--MainColor);
-    color: #fff;
+    background-color: var(--MainColor) !important;
+    color: #fff !important;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 500 !important; 
     padding: 10px 20px;
     transition: var(--HoverTransition);
     transition-property: background-color;
 }
 
 .section-cta-o {
-    background-color: transparent;
-    color: var(--MainColor);
-    padding: 0;
-    transition-property: color;
+    background-color: transparent !important;
+    color: var(--MainColor) !important;
+    padding: 0 !important;
+    transition-property: color !important;
 }
 
 .section-cta:hover {
-    color: #fff;
-    background-color: var(--MainColorDark);
+    color: #fff !important;
+    background-color: var(--MainColorDark) !important;
 }
 
 .section-cta-o:hover {
-    color: var(--MainColorDark);
-    background-color: transparent;
+    color: var(--MainColorDark) !important;
+    background-color: transparent !important;
 }
 
 .section-cta span,
 .section-cta-o span {
     margin-left: 10px;
-    transition: var(--HoverTransition);
-    transition-property: margin-left;
+    transition: var(--HoverTransition) !important;
+    transition-property: margin-left !important;
 }
 
 .section-cta:hover span,
 .section-cta-o:hover span {
-    margin-left: 20px;
+    margin-left: 20px !important;
 }
 
 .subsection-cta {
@@ -726,6 +726,11 @@ textura */
  * 4.0 - Heroes
  */
 
+ /* Banner Slideshow*/
+
+ 
+
+
 .hero {
     position: relative;
     overflow: hidden;
@@ -786,6 +791,32 @@ textura */
     letter-spacing:-3px;
     font-weight: 700;
 }
+
+/* 
+video */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 999;
+}
+
+#btnFecharPopup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 /* 
 animação texto na logo */
 
@@ -3478,6 +3509,21 @@ footer .copyright-text {
       }
     
 }
+
+@media screen and (max-width: 780px) {
+    .texto-container {
+        justify-content: center !important;
+        
+      }
+
+    #text-controller1, #text-controller2, #text-controller3{
+        justify-content: center !;
+    }
+      
+    
+}
+
+
 
 @media (min-width: 843px) {
     #BtnReadMore1,

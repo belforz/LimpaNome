@@ -130,3 +130,26 @@ function lerMais(textId, btnId,event) {
 //     }
 //   }
   
+// Banner carrousel
+
+// Video código
+
+const btnQueroConhecer = document.getElementById('btnQueroConhecer');
+btnQueroConhecer.addEventListener("click", function() {
+    // Criar elemento de vídeo
+    var videoElement = document.createElement("video");
+    videoElement.src = "/src/videos/video.mp4";  // Substitua pelo URL do seu vídeo
+    videoElement.controls = true;
+
+    // Adicionar o elemento de vídeo à estrutura do pop-up
+    document.getElementById("popupContainer").innerHTML = "";
+    document.getElementById("popupContainer").appendChild(videoElement);
+
+    // Exibir o pop-up
+    document.getElementById("popupContainer").style.display = "block";
+});
+
+// Função para fechar o pop-up
+function fecharPopup() {
+    document.getElementById("popupContainer").style.display = "none";
+}

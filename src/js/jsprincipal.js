@@ -43,27 +43,35 @@
     }
 
     function onContentScroll() {
+        var scrollPosition = window.pageYOffset;
+    
         if ($('.header').hasClass('bigger') || $('.header').hasClass('no-bg')) {
-            if (window.pageYOffset > 20) {
+            if (scrollPosition > 20) {
                 $('.header').addClass('is-sticky');
+                $('#logo').addClass('is-sticky');
             } else {
                 $('.header').removeClass('is-sticky');
+                $('#logo').removeClass('is-sticky');
             }
         } else if ($('.header').hasClass('no-bg')) {
-            if (window.pageYOffset > 0) {
+            if (scrollPosition > 0) {
                 $('.header').addClass('is-sticky');
+                $('#logo').addClass('is-sticky');
             } else {
                 $('.header').removeClass('is-sticky');
+                $('#logo').removeClass('is-sticky');
             }
         } else {
-            if (window.pageYOffset > 93) {
+            if (scrollPosition > 93) {
                 $('.header').addClass('is-sticky');
+                $('#logo').addClass('is-sticky');
             } else {
                 $('.header').removeClass('is-sticky');
+                $('#logo').removeClass('is-sticky');
             }
         }
     }
-
+    
     window.onscroll = function() {
         onContentScroll();
     };
@@ -135,21 +143,29 @@ function lerMais(textId, btnId,event) {
 // Video código
 
 const btnQueroConhecer = document.getElementById('btnQueroConhecer');
+const btnFecharPopup = document.getElementById('btnFecharPopup');
+const popupContainer = document.getElementById('popupContainer');
 btnQueroConhecer.addEventListener("click", function() {
     // Criar elemento de vídeo
     var videoElement = document.createElement("video");
-    videoElement.src = "/src/videos/video.mp4";  // Substitua pelo URL do seu vídeo
+    videoElement.src = "/src/videos/video.mp4";  // 
     videoElement.controls = true;
+    videoElement.style.width = "70%";
+    videoElement.style.border= " border: 1px solid #ccc;"
+    // videoElement.style.margin ="2%"
 
     // Adicionar o elemento de vídeo à estrutura do pop-up
-    document.getElementById("popupContainer").innerHTML = "";
-    document.getElementById("popupContainer").appendChild(videoElement);
+    popupContainer.innerHTML = "";
+    popupContainer.appendChild(videoElement);
+    
 
     // Exibir o pop-up
-    document.getElementById("popupContainer").style.display = "block";
+    popupContainer.style.display = "block";
+    btnFecharPopup.style.display = "block";
 });
 
 // Função para fechar o pop-up
 function fecharPopup() {
-    document.getElementById("popupContainer").style.display = "none";
+    popupContainer.style.display = "none";
+    btnFecharPopup.style.display="none";
 }

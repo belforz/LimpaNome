@@ -801,20 +801,27 @@ video */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: #fff;
+    padding-left: 10%;
+    margin: 1%;
+   background-color: #fff;
+    
     border: 1px solid #ccc;
-    z-index: 999;
+    z-index: 6;
+    
 }
 
 #btnFecharPopup {
+    display: none;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: transparent;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    background-color: #000000;
+    
+    color: #FFF8EC;
     border: none;
     font-size: 20px;
     cursor: pointer;
+    z-index: 9;
 }
 
 /* 

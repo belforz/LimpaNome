@@ -1,6 +1,6 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/public_html/
+    - export DEPLOYPATH=/home2/zaions38/LimpaNome/
     - git fetch --all
     - git reset --hard origin/main  # assuming 'main' is your main branch, replace it if necessary
     - /bin/cp -R * $DEPLOYPATH

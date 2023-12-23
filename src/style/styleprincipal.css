@@ -791,7 +791,13 @@ textura */
     letter-spacing:-3px;
     font-weight: 700;
 }
-
+/* img logo */
+@media (max-width:904px) {
+    .logo-1 {
+        display: none;
+    }
+    
+}
 /* 
 video */
 

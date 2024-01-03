@@ -166,6 +166,8 @@ btnQueroConhecer.addEventListener("click", function() {
     btnFecharPopup.style.display = "block";
 });
 
+//mind
+
 // Função para fechar o pop-up
 function fecharPopup() {
     popupContainer.style.display = "none";

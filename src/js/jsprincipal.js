@@ -148,10 +148,12 @@ const popupContainer = document.getElementById('popupContainer');
 btnQueroConhecer.addEventListener("click", function() {
     // Criar elemento de vídeo
     var videoElement = document.createElement("video");
-    videoElement.src = "/src/videos/video.mp4";  // 
+    videoElement.src = "/src/videos/video-site.mp4";  // 
     videoElement.controls = true;
     videoElement.style.width = "70%";
     videoElement.style.border= " border: 1px solid #ccc;"
+    videoElement.className = "responsive-video";
+
     // videoElement.style.margin ="2%"
 
     // Adicionar o elemento de vídeo à estrutura do pop-up
@@ -163,6 +165,8 @@ btnQueroConhecer.addEventListener("click", function() {
     popupContainer.style.display = "block";
     btnFecharPopup.style.display = "block";
 });
+
+//mind
 
 // Função para fechar o pop-up
 function fecharPopup() {
